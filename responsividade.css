@@ -1,36 +1,45 @@
-@media screen and (max-width: 480px){
-    body{
+@media screen and (min-device-width : 10px) and (max-device-width : 319px) {
+    body {
         flex-direction: column;
         width: 100vh;
-        
-    }
-    header{
-        width: 100%;
-        height: 180px;        
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        border: #132235 solid 3px;
     }
 
-    .logo{
-        width: 50vw;
-        max-width: 50vw;
+    header {
+        width: 100%;
+        height: 180px;
+        display: flex;
+        justify-content: left;
+    }
+
+    .logo {
+        width: 100%;
+        max-width: none;
         height: 100%;
+        margin-left: 10px;
+
     }
 
-    main{
+    main {
         width: 100%;
         display: flex;
-        flex-direction: column;      
-        
+        flex-direction: column;
+
     }
 
-    .container-meio{
+    .container-meio {
         display: flex;
-        width: 60%;
+        width: 100%;
         height: 60vh;
-        justify-self: left;
-        align-items:center;
-        margin: 10px 20px ;
+        justify-content: center;
+        align-items: center;
+
     }
-    .meio{
+
+    .meio {
         display: flex;
         justify-content: center;
         align-items: center;
@@ -39,27 +48,28 @@
         border: solid black 2px;
     }
 
-    .texto-principal{
+    .texto-principal {
         width: 100%;
         height: 100%;
-        display: grid;
+        display: flex;
         justify-content: center;
         align-items: center;
     }
 
-    .texto{
+    .texto {
         display: flex;
-        font-size: 1.5em;
+        font-size: 0.8em;
         width: 90%;
-        height: 10%;
+        height: 5%;
         margin: 0;
         text-align: center;
     }
-    .predio-principal{
+
+    .predio-principal {
         display: none;
     }
 
-    .container-meio2e3{
+    .container-meio2e3 {
         width: 100vh;
         display: flex;
         justify-content: left;
@@ -67,62 +77,87 @@
         height: 100%;
         flex-direction: column;
     }
-   
-    .pai-do-meio2e3{
+
+    .pai-do-meio2e3 {
         width: 100%;
         height: 100%;
         display: flex;
-        flex-direction: column;  
-        margin: 0;      
+        flex-direction: column;
+        margin: 0;
     }
 
-    .meio2{
+    .meio2 {
         display: flex;
         justify-content: center;
         align-items: center;
         margin: 0;
-        
+
     }
-    .container-meio2{
+
+    .container-meio2 {
         display: grid;
         flex-direction: column;
         align-items: center;
         width: 100%;
-       
+
     }
 
-    .fotos-texto-predios{
-        grid-template-columns: 0.2fr 1fr;
-        width: 80vh;
+    .fotos-texto-predios {
+        grid-template-columns: 1fr;
+        grid-template-rows: none;
+        width: 50%;
+        border: solid red 2px;
     }
 
-    .meio3{
+    .data {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: 10px;
+    }
+
+    .meio3 {
         width: 100vmax;
         max-width: 80vmax;
         justify-items: center;
-    }
-    .container-mural{
-        width: 140%;
-        justify-items: center;
-        
-    }
-    .mural{
-        width: 120%;
-        justify-items: center;
-    }
-    .fotos-texto-estados{
-        width: 100%;
+        height: 600px;
     }
 
-    .container-meio4{
+    .container-mural {
+        width: 140%;
+        justify-items: center;
+
+    }
+
+    .mural {
+        width: 70%;
+        justify-items: center;
+
+    }
+
+    .fotos-texto-estados {
+        width: 100%;
+        height: 90%;
+    }
+
+    .titulo-article-section-mural {
+        display: flex;
+
+    }
+
+    .img-figure-article-section {
+        display: none;
+    }
+
+    .container-meio4 {
         justify-items: center;
         width: 100%;
         margin: 0;
         padding: 0;
     }
 
-    .fundo-meio4{
-        background-size: cover ;
+    .fundo-meio4 {
+        background-size: cover;
         margin: 0;
         padding: 0;
         background-color: #132235;
@@ -130,7 +165,7 @@
         flex-wrap: nowrap;
     }
 
-    .container-form{
+    .container-form {
         width: 80%;
         height: 60%;
         display: grid;
@@ -139,58 +174,792 @@
         padding: 10px;
     }
 
-    .formulario{
+    .formulario {
         width: 100%;
         height: 100%;
     }
-    input{
+
+    input {
         width: 300px;
         max-width: none;
     }
 
-    .texto-login{
-        max-width: none;
-        margin: 0;
-        padding: 0;
-        grid-template-columns: 1fr 0.5fr;
-    }
-    .parte1{
+    .parte1 {
         padding: 5px;
         margin: 0;
         width: 100%;
         max-width: none;
         display: inline;
     }
-    .texto-form{
+
+    .texto-form {
         width: 100%;
+        height: 300px;
     }
 
-    .redessociais{
-        display: flex;
-        flex-direction: row;
-    }
-    .sociais{
-        display: flex;
-        flex-direction: row;
-        width: 60px;
+    .texto-form>p {
+        font-size: 1.2rem;
     }
 
-    button{
+    .redessociais {
+        display: flex;
+        flex-direction: row;
+        margin-top: 10px;
+        width: 90vw;
+        gap: 2px;
+        min-width: 175px;
+        max-width: 180px;
+    }
+
+    .sociais {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        height: 100%;
+    }
+
+    .parte2 {
+        width: 50%;
+    }
+
+    button {
         width: 30vw;
     }
-    footer{
+
+    footer {
         width: 100%;
         text-align: center;
     }
 
-    .textorodape{
+    .textorodape {
+        width: 100%;
+        height: 80px;
+    }
+
+}
+
+
+
+@media screen and (min-device-width : 320px) and (max-device-width : 480px) {
+    /* celulares */
+
+    body {
+        flex-direction: column;
+        width: 100vh;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+    }
+
+    header {
+        width: 100%;
+        height: 180px;
+    }
+
+    .logo {
+        width: 50vw;
+        max-width: 50vw;
+        height: 100%;
+    }
+
+    main {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    .container-meio {
+        display: flex;
+        width: 60%;
+        height: 60vh;
+        justify-self: left;
+        align-items: center;
+        margin: 10px 20px;
+    }
+
+    .meio {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+        border: solid black 2px;
+    }
+
+    .texto-principal {
+        width: 100%;
+        height: 100%;
+        min-height: 80%;
+        display: grid;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .texto {
+        display: flex;
+        font-size: 0.6em;
+        width: 90%;
+        height: 80%;
+        margin: 0;
+        max-width: 340px;
+        text-align: center;
+    }
+
+    .predio-principal {
+        display: none;
+    }
+
+    .container-meio2e3 {
+        width: 100vh;
+        display: flex;
+        justify-content: left;
+        align-items: center;
+        height: 100%;
+        flex-direction: column;
+    }
+
+    .pai-do-meio2e3 {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+    }
+
+    .meio2 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+
+    }
+
+    .container-meio2 {
+        display: grid;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+
+    }
+
+
+    .fotos-texto-predios {
+        grid-template-columns: 0.2fr 1fr;
+        width: 80vh;
+    }
+
+    .meio2-section>a {
+        display: none;
+    }
+
+    .meio3 {
+        width: 100vmax;
+        max-width: 80vmax;
+        justify-items: center;
+    }
+
+    .container-mural {
+        width: 140%;
+        justify-items: center;
+
+    }
+
+    .mural {
+        width: 120%;
+        justify-items: center;
+    }
+
+    .fotos-texto-estados {
+        width: 100%;
+    }
+
+    .container-meio4 {
+        justify-items: center;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+
+    .fundo-meio4 {
+        background-size: cover;
+        margin: 0;
+        padding: 0;
+        background-color: #132235;
+        display: flex;
+        flex-wrap: nowrap;
+    }
+
+    .container-form {
+        width: 80%;
+        height: 60%;
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        padding: 10px;
+    }
+
+    .formulario {
+        width: 100%;
+        height: 100%;
+    }
+
+    input {
+        width: 300px;
+        max-width: none;
+    }
+
+    .parte1 {
+        padding: 5px;
+        margin: 0;
+        width: 100%;
+        max-width: none;
+        display: inline;
+    }
+
+    .texto-form {
+        width: 100%;
+        height: 300px;
+    }
+
+    .texto-form>p {
+        font-size: 1.2rem;
+    }
+
+    .redessociais {
+        display: flex;
+        flex-direction: row;
+        margin-top: 10px;
+        width: 90vw;
+        gap: 2px;
+        min-width: 175px;
+        max-width: 180px;
+    }
+
+    .sociais {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        height: 100%;
+    }
+
+
+    .parte2 {
+        width: 50%;
+    }
+
+    button {
+        width: 30vw;
+    }
+
+    footer {
+        width: 100%;
+        text-align: center;
+    }
+
+    .textorodape {
         width: 100%;
         height: 80px;
     }
 }
 
-/* @media screen and (max-width: 840){
-    
-} */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (min-device-width : 481px) and (max-device-width : 800px) {
+
+    /* tablets */
+    body {
+        flex-direction: column;
+        width: 100vh;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+
+    }
+
+    header {
+        width: 100vh;
+        height: 180px;
+    }
+
+    .logo {
+        width: 50vw;
+        max-width: 50vw;
+        height: 100%;
+    }
+
+    main {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    .container-meio {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        height: 60vh;
+        justify-self: left;
+        align-items: center;
+        margin: 10px 20px;
+    }
+
+    .meio {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 80%;
+        height: 100%;
+        border: solid black 2px;
+    }
+
+    .texto-principal {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .texto {
+        display: flex;
+        font-size: 1.0em;
+        width: 70%;
+        height: 10%;
+        margin: 0;
+        text-align: center;
+
+    }
+
+    .predio-principal {
+        display: none;
+    }
+
+    .imgp1 {
+        display: none;
+    }
+
+    .container-meio2e3 {
+        width: 100vh;
+        display: flex;
+        justify-content: left;
+        align-items: center;
+        height: 100%;
+        flex-direction: column;
+    }
+
+    .pai-do-meio2e3 {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+    }
+
+    .meio2 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+
+    }
+
+    .container-meio2 {
+        display: grid;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+
+    }
+
+    .fotos-texto-predios {
+        grid-template-columns: 0.2fr 1fr;
+        width: 80vh;
+    }
+
+    .meio3 {
+        width: 80vmax;
+        max-width: 80vmax;
+        justify-items: center;
+    }
+
+    .container-mural {
+        width: 140%;
+        justify-items: center;
+
+    }
+
+    .mural {
+        width: 100%;
+        justify-items: center;
+    }
+
+    .fotos-texto-estados {
+        width: 100%;
+    }
+
+    .container-meio4 {
+        justify-items: center;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+
+    .fundo-meio4 {
+        background-size: cover;
+        margin: 0;
+        padding: 0;
+        background-color: #132235;
+        display: flex;
+        flex-wrap: nowrap;
+    }
+
+    .container-form {
+        width: 80%;
+        height: 60%;
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        padding: 10px;
+    }
+
+    .formulario {
+        width: 95%;
+        height: 100%;
+    }
+
+    input {
+        width: 300px;
+        max-width: none;
+    }
+
+    .parte1 {
+        padding: 5px;
+        margin: 0;
+        width: 100%;
+        max-width: none;
+        display: inline;
+    }
+
+    .texto-form {
+        width: 100%;
+        height: 300px;
+    }
+
+    .texto-form>p {
+        font-size: 1.5rem;
+    }
+
+    .redessociais {
+        display: flex;
+        flex-direction: row;
+        margin-top: 10px;
+        width: 90vw;
+        gap: 2px;
+        min-width: 175px;
+        max-width: 180px;
+    }
+
+    .sociais {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        height: 100%;
+    }
+
+
+    .parte2 {
+        width: 50%;
+    }
+    button {
+        width: 30vw;
+    }
+
+    footer {
+        width: 100%;
+        text-align: center;
+    }
+
+    .textorodape {
+        width: 100%;
+        height: 80px;
+    }
+
+}
+
+
+
+@media screen and (min-device-width: 801px) and (max-device-width : 1200px) {
+
+    /* pc */
+    body {
+        flex-direction: column;
+        width: 100vh;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+
+    }
+
+    header {
+        width: 100vh;
+        height: 180px;
+    }
+
+    .logo {
+        width: 40vw;
+        max-width: 360px;
+        height: 100%;
+    }
+
+    main {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    .container-meio {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        height: 60vh;
+        justify-self: left;
+        align-items: center;
+        margin: 10px 20px;
+    }
+
+    .meio {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 80%;
+        height: 100%;
+        border: solid black 2px;
+    }
+
+    .texto-principal {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .texto {
+        display: flex;
+        font-size: 1.0em;
+        width: 70%;
+        height: 10%;
+        margin: 0;
+        text-align: center;
+
+    }
+
+    .predio-principal {
+        display: none;
+    }
+
+    .imgp1 {
+        display: none;
+    }
+
+    .container-meio2e3 {
+        width: 100vh;
+        display: flex;
+        justify-content: left;
+        align-items: center;
+        height: 100%;
+        flex-direction: column;
+    }
+
+    .pai-do-meio2e3 {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+    }
+
+    .meio2 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+
+    }
+
+    .container-meio2 {
+        display: grid;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+
+    }
+
+    .fotos-texto-predios {
+        grid-template-columns: 0.2fr 1fr;
+        width: 80vh;
+    }
+
+    .meio3 {
+        width: 80vmax;
+        max-width: 1000px;
+        justify-items: center;
+    }
+
+    .container-mural {
+        width: 140%;
+        justify-items: center;
+
+    }
+
+    .mural {
+        width: 140%;
+        justify-items: center;
+    }
+
+    .fotos-texto-estados {
+        width: 100%;
+    }
+
+    .container-meio4 {
+        justify-items: center;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+
+    .fundo-meio4 {
+        background-size: cover;
+        margin: 0;
+        padding: 0;
+        background-color: #132235;
+        display: flex;
+        flex-wrap: nowrap;
+    }
+
+    .container-form {
+        width: 80%;
+        height: 60%;
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        padding: 10px;
+    }
+
+
+    .formulario {
+        width: 100%;
+        height: 100%;
+        max-width: 600px;
+    }
+
+    input {
+        width: 300px;
+        max-width: none;
+    }
+
+    .parte1 {
+        padding: 5px;
+        margin: 0;
+        width: 100%;
+        max-width: none;
+        display: inline;
+    }
+
+    .texto-form {
+        width: 100%;
+        height: 300px;
+    }
+
+    .texto-form>p {
+        font-size: 1.5rem;
+    }
+
+    .redessociais {
+        display: flex;
+        flex-direction: row;
+        margin-top: 10px;
+        width: 90vw;
+        gap: 2px;
+        min-width: 175px;
+        max-width: 180px;
+    }
+
+    .sociais {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        height: 100%;
+    }
+
+
+    .parte2 {
+        width: 50%;
+    }
+    button {
+        width: 10vw;
+        max-width: 15vw;
+    }
+
+    footer {
+        width: 100%;
+        text-align: center;
+    }
+
+    .textorodape {
+        width: 100%;
+        height: 80px;
+    }
+
+}
+
+
+@media screen and (min-device-width : 1200px) {
+    footer {
+        width: 100%;
+        text-align: center;
+    }
+
+    .textorodape {
+        width: 100%;
+        height: 80px;
+    }
+
+    .meio3{
+        max-width: 90%;
+    }
+
+    .fotos-texto-estados{
+        max-width: 98%;
+    }
+
+    .logo{
+        width: 15vw;
+        height: 100%;
+    }
+
+    header{
+        height: 250px;
+    }
+}
 
 
