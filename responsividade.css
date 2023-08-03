@@ -949,12 +949,36 @@
     }
 
     .logo{
-        width: 15vw;
+        width: 280px;
         height: 100%;
     }
 
     header{
         height: 280px;
+    }
+    
+    .texto-principal{
+        min-width: 390px;
+        min-height: 480px;
+        
+    }
+
+    button {
+        width: 160px;
+        max-width: 160px;
+    }
+
+    .enviar{
+        text-align: center;
+    }
+
+    .formulario{
+        padding-left: 50px;
+    }
+
+    .redessociais{
+        min-width: 195px;
+        min-height: 80px;
     }
 }
 
